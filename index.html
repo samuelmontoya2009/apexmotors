@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApexMotors - Inicio</title>
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand text-uppercase fw-bold" href="index.html">🚗 Apex<span class="text-danger">Motors</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Sobre Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctanos</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-outline-danger btn-sm px-3" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Inicio de sesión</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+  <div class="modal fade" id="modalLogin" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-light border-danger">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title text-danger fw-bold">Iniciar Sesión</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="formLogin">
+            <div class="mb-3">
+              <label class="form-label">Nombre completo</label>
+              <input type="text" class="form-control bg-secondary text-white border-0" placeholder="Ingresa tu Nombre" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Documento</label>
+              <input type="text" class="form-control bg-secondary text-white border-0" placeholder="Ingresa tu Documento" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control bg-secondary text-white border-0" placeholder="Ingresa tu Correo" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Usuario</label>
+              <input type="text" class="form-control bg-secondary text-white border-0" placeholder="Ingresa tu Usuario" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Contraseña</label>
+              <input type="password" class="form-control bg-secondary text-white border-0" placeholder="••••••••" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Repite Contraseña</label>
+              <input type="password" class="form-control bg-secondary text-white border-0" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Entrar</button>
+          </form>
+          <div class="mt-3 text-center">
+            <a href="registro.html" class="text-danger text-decoration-none">¿No tienes cuenta? Regístrate aquí</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="height: 550px;">
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" class="d-block w-100 h-100 object-fit-cover" alt="Auto 1">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-4 rounded border border-danger">
+          <h1 class="display-5 fw-bold text-white">Velocidad y Potencia sin Límites</h1>
+          <p class="lead" style="color: var(--color-accent);">Experimenta la adrenalina pura con nuestros modelos deportivos de alta gama.</p>
+          <a href="productos.html" class="btn btn-primary btn-lg mt-2">Explorar Catálogo</a>
+        </div>
+      </div>
+      <div class="carousel-item" style="height: 550px;">
+        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d" class="d-block w-100 h-100 object-fit-cover" alt="Auto 2">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-4 rounded border border-danger">
+          <h1 class="display-5 fw-bold text-white">Lujo y Confort Urbano</h1>
+          <p class="lead" style="color: var(--color-accent);">Diseños aerodinámicos sofisticados pensados para el máximo rendimiento.</p>
+          <a href="productos.html" class="btn btn-primary btn-lg mt-2">Ver Modelos</a>
+        </div>
+      </div>
+      <div class="carousel-item" style="height: 550px;">
+        <img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd" class="d-block w-100 h-100 object-fit-cover" alt="Auto 3">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-4 rounded border border-danger">
+          <h1 class="display-5 fw-bold text-white">Ingeniería en Fibra de Carbono</h1>
+          <p class="lead" style="color: var(--color-accent);">Innovación tecnológica aplicada para romper récords en cada pista.</p>
+          <a href="contacto.html" class="btn btn-primary btn-lg mt-2">Contáctanos</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+ 
+  <section class="bg-black py-5 border-bottom border-secondary">
+    <div class="container text-center">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="p-3 border border-secondary rounded bg-dark">
+            <h2 class="text-danger fw-bold display-5">+15</h2>
+            <p class="mb-0" style="color: var(--color-accent);">Años de Experiencia en Automovilismo</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 border border-secondary rounded bg-dark">
+            <h2 class="text-danger fw-bold display-5">650 HP</h2>
+            <p class="mb-0" style="color: var(--color-accent);">Potencia Promedio en Modelos GT</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 border border-secondary rounded bg-dark">
+            <h2 class="text-danger fw-bold display-5">100%</h2>
+            <p class="mb-0" style="color: var(--color-accent);">Satisfacción y Garantía en Pista</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="container my-5">
+    <div class="text-center mb-5">
+      <h2 class="text-danger fw-bold">Últimos Lanzamientos</h2>
+      <p style="color: var(--color-accent);">Conoce los vehículos que están redefiniendo los estándares de la velocidad.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="img/photo-1503376780353-7e6692767b70.jpg" class="card-img-top" alt="Viper GT" style="height: 220px; object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-danger">Apex Viper GT</h5>
+            <p class="card-text flex-grow-1" style="color: var(--color-accent);">Equipado con un motor V8 Biturbo y sistema de escape deportivo activo.</p>
+            <a href="productos.html" class="btn btn-primary mt-3">Ver Detalles</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="img/photo-1542282088-72c9c27ed0cd.jpg" class="card-img-top" alt="Phantom X7" style="height: 220px; object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-danger">Phantom X7</h5>
+            <p class="card-text flex-grow-1" style="color: var(--color-accent);">La combinación perfecta entre el lujo ejecutivo y la respuesta de un deportivo.</p>
+            <a href="productos.html" class="btn btn-primary mt-3">Ver Detalles</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="img/photo-1552519507-da3b142c6e3d.jpg" class="card-img-top" alt="Shadow R" style="height: 220px; object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-danger">Shadow R Track-Edition</h5>
+            <p class="card-text flex-grow-1" style="color: var(--color-accent);">Diseño ultra-ligero de competición homologado para uso en carretera.</p>
+            <a href="productos.html" class="btn btn-primary mt-3">Ver Detalles</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="container my-5" style="max-width: 800px;">
+    <h3 class="text-center mb-4 text-danger">Preguntas Frecuentes</h3>
+    <div class="accordion accordion-flush" id="faqAccordion">
+      <div class="accordion-item bg-dark text-light border border-secondary mb-2 rounded">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button bg-dark text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            ¿Cómo puedo solicitar una prueba de manejo?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body" style="color: var(--color-accent);">
+            Puedes registrarte en nuestra plataforma y rellenar el formulario de contacto o agendar directamente desde nuestra sección de sucursales autorizadas.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item bg-dark text-light border border-secondary rounded">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button bg-dark text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            ¿Ofrecen opciones de financiamiento y personalización?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body" style="color: var(--color-accent);">
+            Sí, contamos con planes de crédito personalizados y opciones de personalización de pintura, interiores de cuero y paquetes aerodinámicos.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="container my-5 text-center">
+    <h3 class="mb-4 text-danger">Sitios de Interés</h3>
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
+      <a href="https://www.formula1.com" target="_blank" class="btn btn-outline-secondary text-light">Formula 1 Oficial</a>
+      <a href="https://www.caranddriver.com" target="_blank" class="btn btn-outline-secondary text-light">Car and Driver</a>
+      <a href="https://www.topgear.com" target="_blank" class="btn btn-outline-secondary text-light">Top Gear</a>
+    </div>
+  </section>
+
+  
+  <div id="seccionTabla" class="container my-5 p-4 border border-success rounded bg-dark" style="display:none;">
+    <h3 class="text-success mb-3">Panel de Control: Listado Asignado de Vehículos</h3>
+    <div class="table-responsive">
+      <table class="table table-dark table-striped align-middle border-secondary">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Modelo</th>
+            <th>Categoría</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>01</td><td>Apex Viper GT</td><td>Deportivo</td><td><span class="badge bg-success">Disponible</span></td></tr>
+          <tr><td>02</td><td>Phantom X7</td><td>Sedán Lujo</td><td><span class="badge bg-warning text-dark">Reservado</span></td></tr>
+          <tr><td>03</td><td>Shadow R Track-Edition</td><td>Pista</td><td><span class="badge bg-success">Disponible</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="text-end mt-3">
+      <a href="registro.html" class="btn btn-outline-danger">Ir al Formulario de Registro</a>
+    </div>
+  </div>
+
+ 
+  <footer class="text-center py-4 bg-black border-top border-danger" style="color: var(--color-accent);">
+    <p class="mb-0">&copy; 2026 ApexMotors. Todos los derechos reservados.</p>
+  </footer>
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-4.0.0.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/funciones.js"></script>
+</body>
+</html>

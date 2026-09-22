@@ -1,0 +1,97 @@
+:root {
+  --color-primary: #e60012; /* Rojo deportivo */
+  --color-dark: #111111;    /* Negro elegante */
+  --color-accent: #b3b3b3;  /* Gris plata (tercer color) */
+  --color-bg: #1a1a1a;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  background-color: var(--color-dark) !important;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.navbar-brand, .nav-link {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--color-primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+  background-color: #b3000e;
+  border-color: #b3000e;
+}
+
+.card {
+  background-color: #212529;
+  border: 1px solid #333;
+  color: #fff;
+}
+
+footer {
+  background-color: var(--color-dark);
+  border-top: 2px solid var(--color-primary);
+}
+:root {
+  --color-primary: #e60012; /* Rojo deportivo */
+  --color-dark: #111111;    /* Negro elegante */
+  --color-accent: #b3b3b3;  /* Gris plata */
+  --color-bg: #121214;      /* Fondo principal oscuro y moderno */
+}
+
+body {
+  /* Fondo con un sutil degradado que evita el blanco por completo */
+  background: linear-gradient(135deg, #121214 0%, #1a1a24 100%);
+  background-attachment: fixed;
+  color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: var(--color-dark) !important;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.navbar-brand, .nav-link {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--color-primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+  background-color: #b3000e;
+  border-color: #b3000e;
+}
+
+.card {
+  background-color: #1f1f23;
+  border: 1px solid #2a2a30;
+  color: #fff;
+}
+
+footer {
+  background-color: var(--color-dark);
+  border-top: 2px solid var(--color-primary);
+}
